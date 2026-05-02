@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Offgridshare - Seamless Peer-to-Peer Sharing</title>
+    <meta name="description" content="Download the Offgridshare mobile app. Connect, share, and collaborate off the grid with our secure P2P technology.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="offgridshare_logo.png" alt="Offgridshare Logo" class="logo-img">
+                <span class="logo-text">Offgridshare</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download" class="btn-primary">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container grid">
+            <div class="hero-content">
+                <h1 class="reveal">Connect Anywhere, <span class="gradient-text">Share Everything.</span></h1>
+                <p class="lead reveal">Experience the power of truly decentralized sharing. Offgridshare allows you to connect and exchange data securely without relying on traditional infrastructure.</p>
+                <div class="cta-group reveal">
+                    <a href="https://drive.google.com/file/d/1rbkoKwnEnnxdSrnHo0y4nivjvZjuj2hs/view?usp=drive_link" class="download-btn" id="download-now">
+                        <span class="icon">⬇️</span>
+                        <div class="btn-text">
+                            <span class="small">Download for Mobile</span>
+                            <span class="large">Get Android APK</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="glass-card">
+                    <img src="offgridshare_app_mockup.png" alt="Offgridshare App Mockup" class="app-screenshot">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Offgridshare?</h2>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🌐</div>
+                    <h3>P2P Connectivity</h3>
+                    <p>Share files and data directly between devices using Mesh technology.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>End-to-end encryption ensures your data stays between you and your peers.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Ultra Fast</h3>
+                    <p>Optimized protocols for high-speed transfers even in low-connectivity areas.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🔋</div>
+                    <h3>Battery Efficient</h3>
+                    <p>Designed to run in the background without draining your device's battery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="download-card">
+                <h2>Ready to go off-grid?</h2>
+                <p>Join thousands of users who are already sharing securely.</p>
+                <a href="https://drive.google.com/file/d/1rbkoKwnEnnxdSrnHo0y4nivjvZjuj2hs/view?usp=drive_link" class="btn-xl reveal">
+                    Download Latest Version
+                </a>
+                <div class="version-info">
+                    <span>Version 1.2.4</span>
+                    <span>•</span>
+                    <span>Android 8.0+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Offgridshare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple reveal animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
