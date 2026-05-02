@@ -396,27 +396,86 @@
 
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Why Offgridshare?</h2>
+            <h2 class="section-title">The OffgridShare Ecosystem</h2>
             <div class="features-grid">
                 <div class="feature-card reveal">
-                    <div class="feature-icon">🌐</div>
-                    <h3>P2P Connectivity</h3>
-                    <p>Share files and data directly between devices using Mesh technology.</p>
-                </div>
-                <div class="feature-card reveal">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure & Private</h3>
-                    <p>End-to-end encryption ensures your data stays between you and your peers.</p>
+                    <div class="feature-icon">💾</div>
+                    <h3>Offline-First</h3>
+                    <p>Powered by PouchDB and CouchDB. Your data stays on your device and syncs automatically when a local peer is detected.</p>
                 </div>
                 <div class="feature-card reveal">
                     <div class="feature-icon">⚡</div>
-                    <h3>Ultra Fast</h3>
-                    <p>Optimized protocols for high-speed transfers even in low-connectivity areas.</p>
+                    <h3>True P2P Transfer</h3>
+                    <p>Direct WebRTC pipes between devices. No middleman, no servers—just pure, high-speed data flow over LAN/Wi-Fi.</p>
                 </div>
                 <div class="feature-card reveal">
-                    <div class="feature-icon">🔋</div>
-                    <h3>Battery Efficient</h3>
-                    <p>Designed to run in the background without draining your device's battery.</p>
+                    <div class="feature-icon">📱</div>
+                    <h3>Universal Support</h3>
+                    <p>A single ecosystem for Android (Capacitor), Desktop (Electron), and Web (PWA). Share across all your devices seamlessly.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Dual Storage</h3>
+                    <p>The <b>Vault</b> for metadata and small files, and <b>Quick Share</b> for streaming gigabytes of data without memory limits.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Absolute Privacy</h3>
+                    <p>No accounts, no tracking, and no cloud servers. Your data never leaves your local network infrastructure.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🤳</div>
+                    <h3>QR Pairing</h3>
+                    <p>Instantly pair devices using QR codes or <b>Signal Strings</b>. Simple, secure, and completely offline connection setup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="architecture" class="architecture" style="padding: 8rem 0; background: rgba(255,255,255,0.02);">
+        <div class="container">
+            <h2 class="section-title">Built for Resilience</h2>
+            <div class="grid">
+                <div class="arch-content reveal">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary);">The Dual-Storage Strategy</h3>
+                    <p class="lead" style="margin-bottom: 2rem;">OffgridShare intelligently separates data to ensure maximum performance and reliability.</p>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: #fff; margin-bottom: 0.5rem;">📂 The Vault</h4>
+                        <p style="color: var(--text-dim);">A persistent local database (PouchDB) for your metadata, messages, and small files. It stays in sync across your devices via CouchDB whenever they meet on a local network.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: #fff; margin-bottom: 0.5rem;">🚀 Quick Share</h4>
+                        <p style="color: var(--text-dim);">A high-performance P2P streaming pipe for large files. Send 4K movies or large archives directly from device to device without consuming internal database storage.</p>
+                    </div>
+                </div>
+                <div class="arch-tech reveal">
+                    <div class="glass-card" style="padding: 2.5rem; border-radius: 30px;">
+                        <h3 style="margin-bottom: 1.5rem; text-align: center;">The Tech Stack</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌐</div>
+                                <div style="font-weight: 600;">WebRTC</div>
+                                <div style="font-size: 0.8rem; color: var(--text-dim);">P2P Streaming</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">📦</div>
+                                <div style="font-weight: 600;">PouchDB</div>
+                                <div style="font-size: 0.8rem; color: var(--text-dim);">Offline Sync</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
+                                <div style="font-weight: 600;">Capacitor</div>
+                                <div style="font-size: 0.8rem; color: var(--text-dim);">Native Bridge</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🖥️</div>
+                                <div style="font-weight: 600;">Electron</div>
+                                <div style="font-size: 0.8rem; color: var(--text-dim);">Desktop App</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
